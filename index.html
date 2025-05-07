@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intenta.cl - El Arte de Intentar</title>
+    <meta name="description" content="Intenta.cl: Un espacio para explorar, crear, aprender y compartir tus intentos. Atrévete a dar el primer paso.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth; /* Para un desplazamiento suave al hacer clic en enlaces internos */
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Un gradiente morado/azul */
+        }
+        .icon-glow {
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #667eea; /* Color de acento */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                Intenta.cl
+            </a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-purple-600 transition duration-300">Qué es</a>
+                <a href="#ideas" class="text-gray-600 hover:text-purple-600 transition duration-300">Ideas</a>
+                <a href="#journey" class="text-gray-600 hover:text-purple-600 transition duration-300">Tu Viaje</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600 transition duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <svg class="w-24 h-24 mx-auto mb-8 icon-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.692c0 .426.373.75.75.75h2.5a.75.75 0 00.75-.75V3.104m0 0a2.25 2.25 0 10-4.5 0 2.25 2.25 0 004.5 0zM6.75 19.896v-5.692c0-.426-.373-.75-.75-.75h-2.5a.75.75 0 00-.75.75v5.692m0 0a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0zM17.25 19.896v-5.692c0-.426.373-.75.75-.75h2.5a.75.75 0 00.75-.75v-5.692m0 0a2.25 2.25 0 10-4.5 0 2.25 2.25 0 004.5 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 16.148V19.5m0 0A2.25 2.25 0 107.5 21.75a2.25 2.25 0 002.25-2.25zm7.5-3.352V19.5m0 0a2.25 2.25 0 10-2.25 2.25A2.25 2.25 0 0017.25 19.5zM12 3.104V6.75m0 0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"></path></svg>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                El Universo de <span class="text-yellow-300">Intentar</span>
+            </h1>
+            <p class="text-lg md:text-2xl mb-8 font-light max-w-3xl mx-auto">
+                Cada gran descubrimiento, cada habilidad dominada, cada sueño alcanzado, comenzó con un simple <strong class="font-semibold">intento</strong>.
+            </p>
+            <a href="#about" class="bg-white text-purple-600 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 text-lg">
+                Descubre Más
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">¿Qué es Intenta.cl?</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <svg class="w-full max-w-md mx-auto h-auto rounded-lg" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="80" rx="8" fill="#E0E7FF"/>
+                        <path d="M20 60L35 40L50 50L65 30L80 50" stroke="#667EEA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="35" cy="40" r="3" fill="#A3BFFA"/>
+                        <circle cx="65" cy="30" r="3" fill="#A3BFFA"/>
+                        <path d="M10 20H30" stroke="#A3BFFA" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M10 28H25" stroke="#A3BFFA" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M70 65H90" stroke="#A3BFFA" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M75 73H90" stroke="#A3BFFA" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <p class="mt-2 text-sm text-gray-500 text-center">[Imagen de un camino o gráfico de progreso]</p>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        <strong>Intenta.cl</strong> nace de la idea de que el progreso y el aprendizaje son un viaje continuo de experimentación.
+                        Es un espacio para celebrar la curiosidad, la valentía de empezar algo nuevo y la resiliencia para seguir adelante, incluso cuando las cosas no salen como se planean.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Aquí queremos fomentar una mentalidad de crecimiento, donde cada <strong class="text-purple-600">intento</strong> es una oportunidad valiosa.
+                        No importa si es aprender a programar, lanzar un proyecto personal, dominar un nuevo idioma o cocinar una receta compleja por primera vez.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Explora nuevas ideas sin miedo.</li>
+                        <li>Documenta tus procesos y aprendizajes.</li>
+                        <li>Inspírate con los intentos de otros.</li>
+                        <li>Recuerda: el fracaso es solo un intento que te enseña algo nuevo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ideas" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">¿Qué puedes <span class="text-purple-600">Intentar</span> Aquí?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-purple-100 text-purple-600">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v2c0 1.105-.895 2-2 2H6a2 2 0 01-2-2v-2a6 6 0 016-6zM9 9a3 3 0 013-3h0a3 3 0 013 3v2a3 3 0 01-3 3h0a3 3 0 01-3-3V9z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Tu Bitácora de Intentos</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Crea un blog personal para documentar tus proyectos, aprendizajes, desafíos y cómo los superas. ¡Inspira a otros con tu viaje!
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                    <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-blue-100 text-blue-600">
+                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a4.143 4.143 0 00-5.858-5.858L12 11.142l-1.57-1.57a4.143 4.143 0 10-5.858 5.858L12 18.858l7.428-7.43zM12 21a9 9 0 100-18 9 9 0 000 18z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Portafolio Creativo</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Muestra las cosas que has intentado construir, diseñar o crear. Un espacio para tus experimentos y obras, finalizadas o en proceso.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                     <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-green-100 text-green-600">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Comunidad de Aprendizaje</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Comparte recursos, tutoriales, o inicia discusiones. Un lugar para conectar con otros que también están en el camino de intentar y aprender.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="py-16 md:py-24 hero-gradient text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Tu Viaje Comienza con un Intento</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                No esperes el momento perfecto, porque el momento perfecto es ahora.
+                Da el primer paso, por pequeño que sea. <strong class="font-semibold">Intenta.cl</strong> está aquí para recordarte que tienes el potencial.
+            </p>
+            <div class="flex justify-center items-center space-x-4">
+                <svg class="w-12 h-12 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <p class="text-2xl font-semibold">¡Atrévete a <span class="text-yellow-300">Intentar</span>!</p>
+                <svg class="w-12 h-12 opacity-75 transform scale-x-[-1]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">¿Listo para Compartir tu Intento?</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
+                Este es solo el comienzo. A medida que <strong>Intenta.cl</strong> evolucione, podríamos añadir formas de conectar y compartir.
+                Por ahora, ¡inspírate y empieza tu propio camino!
+            </p>
+            <p class="text-gray-600">
+                (Aquí podrías eventualmente poner un formulario de contacto o enlaces a redes sociales)
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Intenta.cl</p>
+            <p class="mb-4">Inspirando acción, un intento a la vez.</p>
+            <p>&copy; <span id="currentYear"></span> Intenta.cl - Todos los derechos reservados (o los que decidas).</p>
+            <p class="text-sm mt-2">Diseñado con <span class="text-red-400">&hearts;</span> y Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script simple para actualizar el año en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
