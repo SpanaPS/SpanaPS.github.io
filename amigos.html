@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos - Intenta.cl</title>
+    <meta name="description" content="Conoce a los amigos y colaboradores de Intenta.cl.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #667eea; /* Color de acento principal */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .social-icon svg {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover svg {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                Intenta.cl
+            </a>
+            <div class="space-x-4">
+                <a href="index.html#about" class="text-gray-600 hover:text-purple-600 transition duration-300">Qué es</a>
+                <a href="index.html#ideas" class="text-gray-600 hover:text-purple-600 transition duration-300">Ideas</a>
+                <a href="amigos.html" class="text-purple-600 font-semibold transition duration-300">Amigos</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-purple-600 transition duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">Conoce a los Amigos</h1>
+            <p class="text-lg text-gray-600 text-center mb-16 section-title max-w-2xl mx-auto">
+                Personas inspiradoras que forman parte de este viaje de intentar, aprender y crecer.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/E0E7FF/4F46E5?text=Amigo+1" alt="[Foto de Nombre Amigo 1]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/E0E7FF/4F46E5?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-purple-700">Nombre Amigo 1</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Una breve descripción sobre el amigo 1, su pasión o cómo contribuye/inspira.</p>
+                    <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 1">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 1">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/D1FAE5/059669?text=Amigo+2" alt="[Foto de Nombre Amigo 2]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/D1FAE5/059669?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-green-700">Nombre Amigo 2</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Esta es una breve descripción del amigo 2. Siempre está intentando cosas nuevas en la cocina.</p>
+                     <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 2">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 2">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/FEF3C7/D97706?text=Amigo+3" alt="[Foto de Nombre Amigo 3]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/FEF3C7/D97706?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-yellow-700">Nombre Amigo 3</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Amigo 3 es un crack en la programación y siempre está dispuesto a ayudar con un nuevo desafío.</p>
+                     <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 3">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 3">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/FEE2E2/DC2626?text=Amigo+4" alt="[Foto de Nombre Amigo 4]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/FEE2E2/DC2626?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-red-700">Nombre Amigo 4</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Descripción del amigo 4. Un artista increíble que siempre está explorando nuevas formas de expresión.</p>
+                     <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 4">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 4">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/ECFDF5/10B981?text=Amigo+5" alt="[Foto de Nombre Amigo 5]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/ECFDF5/10B981?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-teal-700">Nombre Amigo 5</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Y aquí el amigo 5, siempre con una sonrisa y una idea innovadora bajo el brazo.</p>
+                     <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover transition duration-300 flex flex-col items-center text-center">
+                    <div class="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="https://placehold.co/160x160/ECFDF5/10B981?text=Amigo+5" alt="[Foto de Nombre Amigo 5]" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/160x160/ECFDF5/10B981?text=Imagen+no+disponible'; this.onerror=null;">
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-1 text-teal-700">Nombre Amigo 6</h2>
+                    <p class="text-gray-600 mb-3 text-sm">Y aquí el amigo 6, siempre con una sonrisa y una idea innovadora bajo el brazo.</p>
+                     <div class="flex space-x-4 mt-auto pt-3 border-t border-gray-200 w-full justify-center">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 social-icon" title="LinkedIn de Nombre Amigo 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-600 social-icon" title="Instagram de Nombre Amigo 5">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Intenta.cl</p>
+            <p class="mb-4">Inspirando acción, un intento a la vez.</p>
+            <p>&copy; <span id="currentYear">2025</span> Intenta.cl - Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Diseñado con <span class="text-red-400">&hearts;</span> y Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para actualizar el año en el footer (aunque ya lo puse como 2025 estático)
+        // Para que sea dinámico:
+        // document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Script para el smooth scroll si añades más navegación interna en esta página
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
