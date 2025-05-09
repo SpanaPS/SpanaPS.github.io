@@ -58,6 +58,23 @@
         .icon-glow {
              filter: drop-shadow(0 0 10px rgba(251, 146, 60, 0.6)); /* Sombra naranja para el icono del hero */
         }
+                .hero-background-image-container {
+            position: relative; /* Contenedor para la imagen y el overlay */
+            background-image: url('imagen1.jpg'); /* <<--- REEMPLAZA ESTA URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 32, 44, 0.6); /* Overlay oscuro (slate-800 con opacidad), ajusta el color y opacidad (último valor) */
+            z-index: 1; /* Detrás del contenido, encima de la imagen de fondo */
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -81,8 +98,9 @@
         </nav>
     </header>
 
-    <section class="hero-gradient text-slate-900 py-24 md:py-36">
-        <div class="container mx-auto px-6 text-center">
+    <section class="hero-background-image-container py-24 md:py-36">
+        <div class="hero-overlay"></div> 
+        <div class="container mx-auto px-6 text-center relative z-10"> 
             <svg class="w-28 h-28 mx-auto mb-8 icon-glow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" stroke="#f97316">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-opacity="0.3"/>
                 <path d="M15 14L12 11L9 14" stroke-linecap="round" stroke-linejoin="round"/>
@@ -96,13 +114,13 @@
                 <path d="M6.34315 8.34315L7.75736 9.75736" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                La Fuerza de <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-600">Seguir Intentando</span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-white">
+                La Fuerza de <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-purple-500 to-pink-500">Seguir Intentando</span>
             </h1>
-            <p class="text-lg md:text-xl mb-10 font-normal max-w-3xl mx-auto text-slate-700">
+            <p class="text-lg md:text-xl mb-10 font-normal max-w-3xl mx-auto text-slate-200"> 
                 Celebramos cada paso, cada desafío superado y la valentía de levantarse tras cada caída.
-                Porque crecer es un acto de <strong class="font-semibold text-orange-600">perseverancia constante</strong>.
-            </p>
+                Porque crecer es un acto de <strong class="font-semibold text-orange-400">perseverancia constante</strong>.
+            </p
             <a href="#nuestra-mision" class="main-accent-bg text-white font-semibold py-3 px-10 rounded-lg shadow-xl hover:shadow-2xl main-accent-hover transition-all duration-300 text-lg transform hover:scale-105">
                 Descubre Nuestra Esencia
             </a>
@@ -114,7 +132,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title text-slate-800">El Espíritu de <span class="main-accent-text">Intenta.cl</span></h2>
             <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
                 <div class="md:w-1/2">
-                    <img src="https://placehold.co/600x400/fed7aa/f97316?text=Inspiraci%C3%B3n+Visual" alt="Personas colaborando y creciendo juntas" class="rounded-xl shadow-xl w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x400/fed7aa/f97316?text=Imagen+Inspiradora'; this.onerror=null;">
+                    <img src="imagen2.jpg" alt="Personas colaborando y creciendo juntas" class="rounded-xl shadow-xl w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x400/fed7aa/f97316?text=Imagen+Inspiradora'; this.onerror=null;">
                 </div>
                 <div class="md:w-1/2">
                     <p class="text-lg text-slate-700 mb-5 leading-relaxed">
@@ -189,11 +207,11 @@
             <p class="text-slate-700 mb-4">
                 Actualmente estamos construyendo las vías de contacto. Mientras tanto, puedes seguir nuestro progreso aquí.
             </p>
-            <a href="#" class="bg-white text-orange-500 font-semibold py-3 px-10 rounded-lg shadow-xl hover:shadow-2xl hover:bg-orange-50 transition-all duration-300 text-lg transform hover:scale-105">
+            <a href="mailto:contacto@intenta.cl?subject=Quiero ser parte de Intenta.cl" class="bg-white text-orange-500 font-semibold py-3 px-10 rounded-lg shadow-xl hover:shadow-2xl hover:bg-orange-50 transition-all duration-300 text-lg transform hover:scale-105">
                 Contáctanos (Próximamente Formulario)
             </a>
              <p class="mt-8 text-sm text-slate-600">
-                (O simplemente envía un email a: <strong class="font-medium">¡Pronto correo!</strong> mientras preparamos un formulario más interactivo)
+                (O simplemente envía un email a: <strong class="font-medium">contacto@intenta.cl</strong> mientras preparamos un formulario más interactivo)
             </p>
         </div>
     </section>
